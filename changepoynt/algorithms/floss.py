@@ -26,7 +26,7 @@ class FLOSS(Algorithm):
         :param window_length: the length of the window used for the distance comparisons in the matrix profile.
         :param initial_length: the length for the initial matrix profile length
         """
-        raise NotImplementedError('FLOSS is not yet fully functional.')
+        # raise NotImplementedError('FLOSS is not yet fully functional.')
         # save the specified parameters into instance variables
         self.window_length = window_length
         self.initial_length = initial_length
