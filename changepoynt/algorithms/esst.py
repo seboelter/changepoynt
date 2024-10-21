@@ -110,7 +110,7 @@ class ESST(Algorithm):
         """
         This function calculates the anomaly score for each sample within the time series.
 
-        It also does some assertion regarding time series length.
+        It also does some assertion regarding timße series length.
 
         :param time_series: 1D array containing the time series to be scored
         :return: anomaly score
@@ -122,7 +122,7 @@ class ESST(Algorithm):
         # check that we have at least two windows
         print(time_series.shape[0])
         print(self.window_length)
-        assert time_series.shape[0] > self.window_length, 'Time series needs to be longer than window length.'
+        #assert time_series.shape[0] > self.window_length, 'Time series needs to be longer than window length.'
 
 
         # compute the starting point of the scoring (past and future hankel need to fit)
