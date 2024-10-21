@@ -120,7 +120,10 @@ class ESST(Algorithm):
         assert time_series.ndim == 1, "Time series needs to be an 1D array."
 
         # check that we have at least two windows
+        print(time_series.shape[0])
+        print(self.window_length)
         assert time_series.shape[0] > self.window_length, 'Time series needs to be longer than window length.'
+
 
         # compute the starting point of the scoring (past and future hankel need to fit)
         starting_point = self.window_length + self.n_windows + self.lag
